@@ -44,7 +44,7 @@
 我们假设，对于任何事件a，不存在 a &rarr; a。
 
 从"空间-时间"角度来看定义更有用，如图1所示。水平方向代表空间，垂直方向代码时间，后发生的时间高于早发生的实际。点代表事件，垂直线代表进程，波浪线代表消息。可以很容易看到 a &rarr; b 代表 从进程和消息线上移动。 例如，我们有 p1 &rarr; r4.
-![](Time, Clocks, and the Ordering of Events in a Distributed System/Fig.1 and Fig.2.jpg)
+![](TimeClocksAndTheOrderingOfEvents/Fig.1 and Fig.2.jpg)
 
 
 重要：<font color="#006600"> 从另外一个角度看a&rarr;b的定义，a&rarr;b意味着事件a和b有因果关系</font>。如果两个事件互不因果影响，那么就说明两个事件是并发的。 例子中 Figure1中事件p3和q3是并发的。
@@ -77,7 +77,8 @@
 
 必须意识到这是一个非常重要的问题。 使用一个<font color="#dd0000">中心规划 </font> 的进程来确保资源按照顺序被获取，这是不可行的，除非做了很多假设。 举例，P0是中心规划进程。假设P1发送消息给P0，并发送消息给P2；P2收到消息后，发送一个消息给P0；如右图所示(译者自己绘图)，P2的请求比P1的请求先到达P0。
 
-![](Time, Clocks, and the Ordering of Events in a Distributed System/wrong-right.jpg)
+![](TimeClocksAndTheOrderingOfEvents/wrong-right.jpg)
+
 
 为了解决这个问题，我们实现一个满足IR1和IR2的时钟，并使用他们为全部事件定义全序 a &Rightarrow; b 。这为全部请求提供全序和释放操作。使用这个排序，很容易找到解决方案。只需要确保每个进程获得其他全部进程的操作即可。 
 
@@ -128,7 +129,7 @@
 
 ## 异常行为
 
-![](Time, Clocks, and the Ordering of Events in a Distributed System/anomalous behavior.jpg)
+![](TimeClocksAndTheOrderingOfEvents/anomalous behavior.jpg)
 
 考虑一个全国的分布式系统，假设一个人在电脑A上发送请求A给远端；之后打电话给B，B发送请求B给远端。可能存在请求B的时间戳小于请求A。
 
