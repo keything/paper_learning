@@ -44,7 +44,7 @@
 我们假设，对于任何事件a，不存在 a &rarr; a。
 
 从"空间-时间"角度来看定义更有用，如图1所示。水平方向代表空间，垂直方向代码时间，后发生的时间高于早发生的实际。点代表事件，垂直线代表进程，波浪线代表消息。可以很容易看到 a &rarr; b 代表 从进程和消息线上移动。 例如，我们有 p1 &rarr; r4.
-![](TimeClocksAndTheOrderingOfEvents/Fig.1\ and\ Fig.2.jpg)
+![](TimeClocksAndTheOrderingOfEvents/Fig1and2.jpg)
 
 
 重要：<font color="#006600"> 从另外一个角度看a&rarr;b的定义，a&rarr;b意味着事件a和b有因果关系</font>。如果两个事件互不因果影响，那么就说明两个事件是并发的。 例子中 Figure1中事件p3和q3是并发的。
@@ -98,7 +98,7 @@
 	
 	
 译者注释：下面例子是[youtube](https://www.youtube.com/watch?v=r7SJOhGF4Nc)中介绍lamport mutual exclusion算法的例子。
-![](Time, Clocks, and the Ordering of Events in a Distributed System/example for lamport's mutual exclusion algorithm.jpg)
+![](TimeClocksAndTheOrderingOfEvents/example-for-lamports-mutual-exclusion-algorithm.jpg)
 	
 问题:我们有三个进程P1-3，其中P1和P3希望获取临界区 critical section (CS)
 
