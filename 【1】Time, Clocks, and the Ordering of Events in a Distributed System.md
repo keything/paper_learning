@@ -44,7 +44,7 @@
 我们假设，对于任何事件a，不存在 a &rarr; a。
 
 从"空间-时间"角度来看定义更有用，如图1所示。水平方向代表空间，垂直方向代码时间，后发生的时间高于早发生的实际。点代表事件，垂直线代表进程，波浪线代表消息。可以很容易看到 a &rarr; b 代表 从进程和消息线上移动。 例如，我们有 p1 &rarr; r4.
-![](TimeClocksAndTheOrderingOfEvents/Fig.1 and Fig.2.jpg)
+![](TimeClocksAndTheOrderingOfEvents/Fig.1\ and\ Fig.2.jpg)
 
 
 重要：<font color="#006600"> 从另外一个角度看a&rarr;b的定义，a&rarr;b意味着事件a和b有因果关系</font>。如果两个事件互不因果影响，那么就说明两个事件是并发的。 例子中 Figure1中事件p3和q3是并发的。
@@ -129,7 +129,7 @@
 
 ## 异常行为
 
-![](/TimeClocksAndTheOrderingOfEvents/anomalous behavior.jpg)
+![](TimeClocksAndTheOrderingOfEvents/anomalous\ behavior.jpg)
 
 考虑一个全国的分布式系统，假设一个人在电脑A上发送请求A给远端；之后打电话给B，B发送请求B给远端。可能存在请求B的时间戳小于请求A。
 
