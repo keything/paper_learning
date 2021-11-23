@@ -129,7 +129,7 @@
 
 ## 异常行为
 
-![](TimeClocksAndTheOrderingOfEvents/anomalous behavior.jpg)
+![](/TimeClocksAndTheOrderingOfEvents/anomalous behavior.jpg)
 
 考虑一个全国的分布式系统，假设一个人在电脑A上发送请求A给远端；之后打电话给B，B发送请求B给远端。可能存在请求B的时间戳小于请求A。
 
