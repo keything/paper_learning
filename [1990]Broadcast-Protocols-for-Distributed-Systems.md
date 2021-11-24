@@ -1,7 +1,4 @@
----
-title: 论文-Broadcast Protocols for Distributed Systems
-tags: 分布式,broadcast
----
+
 
 + 论文：[Broadcast Protocols for Distributed Systems](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=DA32EDFFF7FE22C9B1B1CE7B36D2C6EC?doi=10.1.1.121.3113&rep=rep1&type=pdf)
 + 概述：对于该论文提出Trans 和 Total 协议，没有必要细看。核心思想是：Trans协议不是全序的，当某台机器出现故障时会导致机器上消息顺序不同。而Total协议进行容错处理，即使机器出现故障也能保证机器上消息顺序相同。
