@@ -62,7 +62,7 @@ A Ba Cb Dc Ec'd Cb Fec
 
 结合上述描述的协议内容，可以很清楚知晓算法的核心流程。 
 
-![](BroadcastProtocolForDistributedSystem/broadcast protocols for distributed systems.png)
+![](BroadcastProtocolForDistributedSystem/broadcastProtocolsForDistributedSystems.png)
 
 
 ## The Total Protocol
