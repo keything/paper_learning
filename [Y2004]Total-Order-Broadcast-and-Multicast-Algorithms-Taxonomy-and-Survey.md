@@ -1,7 +1,3 @@
----
-title: 论文-Total-Order-Broadcast-and-Multicast-Algorithms-Taxonomy-and-Survey
-tags: 分布式,broadcast
----
 
 + 论文：[Total Order Broadcast and Multicast Algorithms: Taxonomy and Survey](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.110.6701&rep=rep1&type=pdf)
 + 概述：该文章对于Total Order Broadcast 进行全方面的论述，包括全序广播的详细说明，不容错的全序广播算法的分类、容错的全序广播方法。
